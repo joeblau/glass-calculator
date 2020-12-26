@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EDC5209D2597F43000F7865C /* CameraView in Frameworks */ = {isa = PBXBuildFile; productRef = EDC5209C2597F43000F7865C /* CameraView */; };
+		EDC520A12597F4CC00F7865C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EDC520A02597F4CC00F7865C /* ComposableArchitecture */; };
+		EDCF7B3C2597F16000EB355A /* SwiftUIVisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = EDCF7B3B2597F16000EB355A /* SwiftUIVisualEffects */; };
 		EDE9B7992597EE7C0037011D /* CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE9B7982597EE7C0037011D /* CalculatorApp.swift */; };
 		EDE9B79B2597EE7C0037011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE9B79A2597EE7C0037011D /* ContentView.swift */; };
 		EDE9B79D2597EE7D0037011D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE9B79C2597EE7D0037011D /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC5209D2597F43000F7865C /* CameraView in Frameworks */,
+				EDCF7B3C2597F16000EB355A /* SwiftUIVisualEffects in Frameworks */,
+				EDC520A12597F4CC00F7865C /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,11 @@
 			dependencies = (
 			);
 			name = Calculator;
+			packageProductDependencies = (
+				EDCF7B3B2597F16000EB355A /* SwiftUIVisualEffects */,
+				EDC5209C2597F43000F7865C /* CameraView */,
+				EDC520A02597F4CC00F7865C /* ComposableArchitecture */,
+			);
 			productName = Calculator;
 			productReference = EDE9B7952597EE7C0037011D /* Calculator.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +123,11 @@
 				Base,
 			);
 			mainGroup = EDE9B78C2597EE7C0037011D;
+			packageReferences = (
+				EDCF7B3A2597F16000EB355A /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */,
+				EDC5209B2597F43000F7865C /* XCRemoteSwiftPackageReference "CameraView" */,
+				EDC5209F2597F4CC00F7865C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = EDE9B7962597EE7C0037011D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +342,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDC5209B2597F43000F7865C /* XCRemoteSwiftPackageReference "CameraView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brettfazio/CameraView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		EDC5209F2597F4CC00F7865C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		EDCF7B3A2597F16000EB355A /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucasbrown/swiftui-visual-effects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDC5209C2597F43000F7865C /* CameraView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDC5209B2597F43000F7865C /* XCRemoteSwiftPackageReference "CameraView" */;
+			productName = CameraView;
+		};
+		EDC520A02597F4CC00F7865C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDC5209F2597F4CC00F7865C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		EDCF7B3B2597F16000EB355A /* SwiftUIVisualEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDCF7B3A2597F16000EB355A /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */;
+			productName = SwiftUIVisualEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDE9B78D2597EE7C0037011D /* Project object */;
 }

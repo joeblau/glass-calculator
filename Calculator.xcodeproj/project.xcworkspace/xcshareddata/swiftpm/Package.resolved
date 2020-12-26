@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CameraView",
+        "repositoryURL": "https://github.com/brettfazio/CameraView.git",
+        "state": {
+          "branch": null,
+          "revision": "bb528e129ac23f2888dee51a309bbd4b10374673",
+          "version": "0.0.1"
+        }
+      },
+      {
+        "package": "combine-schedulers",
+        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
+        "state": {
+          "branch": null,
+          "revision": "ff42ec9061d864de7982162011321d3df5080c10",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "swift-case-paths",
+        "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
+        "state": {
+          "branch": null,
+          "revision": "ed1838ab4fa5d47db8aa640736dd5b7672548873",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "swift-composable-architecture",
+        "repositoryURL": "https://github.com/pointfreeco/swift-composable-architecture.git",
+        "state": {
+          "branch": null,
+          "revision": "b67569f69813140cd9c984db33ee959d9711a008",
+          "version": "0.9.0"
+        }
+      },
+      {
+        "package": "SwiftUIVisualEffects",
+        "repositoryURL": "https://github.com/lucasbrown/swiftui-visual-effects.git",
+        "state": {
+          "branch": null,
+          "revision": "b26f8cebd55ff60ed8953768aa818dfb005b5838",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
