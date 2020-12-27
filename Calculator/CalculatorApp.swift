@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct CalculatorApp: App {
+    let store: Store = Store(initialState: CalculatorState(),
+                             reducer: calculatorReducer,
+                             environment: CalculatorEnvironment())
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CalculatorView(store: store)
         }
     }
 }
